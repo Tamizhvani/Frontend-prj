@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--<div id="dv" style="font-size:xx-large; border:1px solid red;border-radius:3%;background-color: cyan;color:black;
+        font-weight: bold;margin:20%;padding:20px; text-align: center;" > -->
+
+        </div>
+
+
+        <div class="form-actions">
+            <form>
+              <div class="alarm-inputs">
+
+                <input type="number" name="hour"  placeholder="Enter hours" min="0" max="12" required />
+                <input type="number" name="minutes" min="0" max="60" placeholder="Enter minutes" required />
+                <input type="number" name="sec" min="0" max="60" placeholder="Enter seconds" required />
+
+                        <select name="zone" required>
+                          <option value="" selected disabled>Zone</option>
+                          <option value="AM">AM</option>
+                          <option value="PM">PM</option>
+                        </select>
+              </div>
+
+              <button>Setalarm</button>
+            </form>
+        </div>
+        
+    
+      <div id="active-alarm">
+        <div id="alarm-text"></div>
+        <button id="clear-alarm">Clear Alarm</button>
+      </div>
+
+      <audio id="alarm-audio"></audio>
+
+      <script src="setAlarm.js"></script>
+
+
+
+
+    
+</body>
+</html>
